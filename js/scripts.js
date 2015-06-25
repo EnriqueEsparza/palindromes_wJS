@@ -1,5 +1,5 @@
 var palindromes = function(word) {
-  var phrase = word.split(" ").join("").split("");
+  var phrase = word.toLowerCase().split(" ").join("").split("");
   var newPhrase = phrase.slice().reverse()
 
   if (phrase.join("") === newPhrase.join("")) {
