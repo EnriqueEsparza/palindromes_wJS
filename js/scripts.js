@@ -1,5 +1,8 @@
 var palindromes = function(word) {
-  if (word === word.split("").reverse().join("")) {
+  var phrase = word.split(" ").join("").split("");
+  var newPhrase = phrase.slice().reverse()
+
+  if (phrase.join("") === newPhrase.join("")) {
     return true;
   } else {
     return false;
@@ -21,3 +24,6 @@ $(document).ready(function(){
   });
 
 });
+
+
+// if (word === word.split("").reverse().join("")) {
